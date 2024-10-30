@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 
-const Main = () => {
+const Main = (props) => {
+  const { name } = props;
   const handleLogout = () => {
     localStorage.removeItem("token");
     window.location.reload();
@@ -9,7 +10,7 @@ const Main = () => {
   return (
     <div className={styles.main_container}>
       <nav className={styles.navbar}>
-        <h1>Brak KING</h1>
+        <h1>Welcome {name}!</h1>
         <button className={styles.white_btn} onClick={handleLogout}>
           Logout
         </button>

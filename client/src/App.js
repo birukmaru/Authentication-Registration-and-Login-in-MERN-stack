@@ -6,9 +6,11 @@ import Login from "./components/Login";
 function App() {
   const user = localStorage.getItem("token");
 
+  const userName = localStorage.getItem("firstName");
+
   return (
     <Routes>
-      {user && <Route path="/" exact element={<Main />} />}
+      {user && <Route path="/" exact element={<Main name={userName} />} />}
       <Route path="/signup" exact element={<Signup />} />
       <Route path="/login" exact element={<Login />} />
       <Route path="/" element={<Navigate replace to="/login" />} />

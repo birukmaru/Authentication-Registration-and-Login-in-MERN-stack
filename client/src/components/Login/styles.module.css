@@ -11,6 +11,7 @@
 	width: 900px;
 	height: 500px;
 	display: flex;
+	flex-wrap: wrap;
 	border-radius: 10px;
 	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
 		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
@@ -19,6 +20,7 @@
 .left {
 	flex: 2;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -44,7 +46,7 @@
 	width: 370px;
 	padding: 15px;
 	border-radius: 10px;
-	background-color: #edf5f3;
+	background-color: hsl(165, 29%, 95%);
 	margin: 5px 0;
 	font-size: 14px;
 }
