@@ -14,7 +14,11 @@ Customizable: The code can be easily customized and integrated into existing MER
 
 # Technologies Used
 MongoDB: database for storing user information securely.
+
 Express.js: Web application framework for building robust and scalable server-side applications.
+
 React.js: JavaScript library for building user interfaces and client-side applications.
+
 Node.js: JavaScript runtime environment for server-side development.
+
 JWT: JSON Web Tokens for secure authentication and authorization.
